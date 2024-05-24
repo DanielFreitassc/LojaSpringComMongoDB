@@ -2,6 +2,8 @@ package com.example.backend.models;
 
 import java.util.UUID;
 
+import org.springframework.hateoas.RepresentationModel;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -12,7 +14,7 @@ import lombok.Data;
 @Data
 @Entity
 @Table(name = "tb_users")
-public class UsersEntity {
+public class UsersEntity extends RepresentationModel<UsersEntity> {
 
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)

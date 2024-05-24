@@ -2,6 +2,8 @@ package com.example.backend.models;
 
 import java.util.UUID;
 
+import org.springframework.hateoas.RepresentationModel;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -13,12 +15,12 @@ import lombok.Data;
 @Data
 @Entity
 @Table(name = "tb_prescription")
-public class PrescriptionsEntity {
+public class PrescriptionsEntity extends RepresentationModel<PrescriptionsEntity>{
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID prescription_id;
-    @JoinColumn(name = "appointment_id")
-    private AppointmentsEntity appointment_id;
+    // @JoinColumn(name = "appointment_id")
+    // private AppointmentsEntity appointment_id;
     private String medication;
     private String dosage;
     private String frequency;
