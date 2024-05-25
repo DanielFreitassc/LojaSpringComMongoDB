@@ -4,6 +4,11 @@ import './index.css'
 import {createBrowserRouter, RouterProvider} from "react-router-dom"
 import Home from './screens/home'
 import Contact from './screens/contact'
+import Appointment from './screens/appointment'
+import Support from './screens/support'
+import Doctors from './screens/doctors'
+import Login from './screens/login'
+import Register from './screens/register'
 
 const router = createBrowserRouter([
   {
@@ -11,8 +16,28 @@ const router = createBrowserRouter([
     element:<Home/>
   },
   {
+    path:"/login",
+    element:<Login/>
+  },
+  {
+    path:"/register",
+    element:<Register/>
+  },
+  {
     path:"/contact",
     element:<Contact/>
+  },
+  {
+    path:"/marque-consulta",
+    element: <Appointment/>
+  },
+  {
+    path:"/apoio-online",
+    element:<Support/>
+  },
+  {
+    path:"/medicos",
+    element:<Doctors/>
   }
 ]) 
 

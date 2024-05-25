@@ -3,12 +3,12 @@
     left: 55px;
     position: absolute;
 }
-    .card {
+.card {
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
     height: 288px;
     width: 328px;
@@ -16,7 +16,11 @@
     padding-left: 54px;
     gap: 12px;
 }
-
+#link-card{
+    
+    
+    
+}
 .card-icon {
     width: 60px;
     height: 60px;
@@ -27,6 +31,7 @@
     font-size: 1.5em;
     font-weight: 500;
     margin-top: 50px;
+    text-decoration: none;
     
 }
 
@@ -34,4 +39,5 @@
     font-size: 1em;
     color: #333;
     width: 200px;
+    text-decoration: none;
 }

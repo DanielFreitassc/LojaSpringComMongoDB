@@ -7,11 +7,14 @@ const Header = () => {
                 <nav className="nav-header">
                     <h1 id="title-header">Life</h1>
                     <Link className="link-header" to="/">Home</Link>
-                    <Link className="link-header" to="#">Marcar Consulta</Link>
+                    <Link className="link-header" to="/marque-consulta">Marcar Consulta</Link>
                     <Link className="link-header" to="/contact">Contato</Link>
-
+                    <Link to={"/login"}>
                     <button className="button-red-header">Login</button>
+                    </Link>
+                    <Link to={"/register"}>
                     <button className="button-white-header">Cadastre-se</button>
+                    </Link>
                 </nav>
             </div>
         </div>

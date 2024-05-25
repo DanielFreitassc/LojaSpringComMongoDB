@@ -1,15 +1,15 @@
-import "./style.css"
+import "./style.css";
 import Cards from "../../components/cards";
 import Header from "../../components/header";
-import heart from "../../assets/heart.png"
-import hear from "../../assets/hear.png"
-import medic from "../../assets/medic.png"
+import heart from "../../assets/heart.png";
+import hear from "../../assets/hear.png";
+import medic from "../../assets/medic.png";
 
 const Home = () => {
     const data = [
-        { title: "Apoio online", body: "Agende uma consulta de forma totalmente online", icon: heart },
-        { title: "Médicos", body: "Veja o perfil dos nosso profissionais", icon: hear },
-        { title: "Marque uma consulta presencial", body: "Agende uma consulta para ir até uma de nossas unidades", icon: medic }
+        { link: "/apoio-online", title: "Apoio online", body: "Agende uma consulta de forma totalmente online", icon: heart },
+        { link: "/medicos", title: "Médicos", body: "Veja o perfil dos nossos profissionais", icon: hear },
+        { link: "/marque-consulta", title: "Marque uma consulta presencial", body: "Agende uma consulta para ir até uma de nossas unidades", icon: medic }
     ];
 
     return (
