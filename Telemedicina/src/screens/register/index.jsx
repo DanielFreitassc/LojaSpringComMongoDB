@@ -25,7 +25,10 @@ const Register = () => {
                     <input type="password" className="input-user" placeholder="Confirme a Senha" id="confirmPassword"/>
                 </label>
                 <label htmlFor="role">Papel:
-                    <select className="input-user" id="role"></select>
+                    <select className="input-user" id="role">
+                        <option value="medico">Médico</option>
+                        <option value="paciente">Paciente</option>
+                    </select>
                 </label>
                 <button className="button-red-header">Entrar</button>
             </div>
