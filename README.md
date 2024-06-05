@@ -3,27 +3,32 @@
 - **URL**: `/forms`
 - **Método**: `POST`
 - **Payload**:
+  
   ```json
   {
-    "name":"Fulano de Tal",
-    "comment":"Achei super legal..",
-    "input_one":"Sim",
-    "input_two":"Sim",
-    "input_three":"Não",
-    "input_four":"Sim",
-    "input_five":"Não",
-    "input_six":"Sim"
-}
+    "name": "Fulano de Tal",
+    "comment": "Achei super legal..",
+    "input_one": "Sim",
+    "input_two": "Sim",
+    "input_three": "Não",
+    "input_four": "Sim",
+    "input_five": "Não",
+    "input_six": "Sim"
+  }
   ```
-- **Resposta**: Retorna o formulário criado no formato.
+  
+- **Resposta**: Retorna o formulário criado no formato JSON.
+  
 - **Exceções**:
   - **400 Bad Request**: Se o payload não estiver conforme esperado ou se houver erros de validação nos campos.
-  
+
 ### Endpoint: Obter Todos os Formulários
 
 - **URL**: `/forms`
 - **Método**: `GET`
-- **Resposta**: Retorna uma lista de todos os formulários cadatrados.
+  
+- **Resposta**: Retorna uma lista de todos os formulários cadastrados no formato JSON.
+  
 - **Exceções**:
   - **404 Not Found**: Se não houver formulários cadastrados no momento.
 
@@ -31,7 +36,9 @@
 
 - **URL**: `/forms/{id}`
 - **Método**: `GET`
-- **Resposta**: Retorna o formulário específico identificado pelo `id`.
+  
+- **Resposta**: Retorna o formulário específico identificado pelo `id` no formato JSON.
+  
 - **Exceções**:
   - **404 Not Found**: Se o formulário com o `id` especificado não existir.
 
@@ -40,19 +47,22 @@
 - **URL**: `/forms/{id}`
 - **Método**: `PUT`
 - **Payload**:
+  
   ```json
   {
-    "name":"Fulano de Tal",
-    "comment":"Achei super legal..",
-    "input_one":"Sim",
-    "input_two":"Sim",
-    "input_three":"Não",
-    "input_four":"Sim",
-    "input_five":"Não",
-    "input_six":"Sim"
-}
+    "name": "Fulano de Tal",
+    "comment": "Achei super legal..",
+    "input_one": "Sim",
+    "input_two": "Sim",
+    "input_three": "Não",
+    "input_four": "Sim",
+    "input_five": "Não",
+    "input_six": "Sim"
+  }
   ```
-- **Resposta**: Retorna o formulário atualizado.
+  
+- **Resposta**: Retorna o formulário atualizado no formato JSON.
+  
 - **Exceções**:
   - **400 Bad Request**: Se o payload não estiver conforme esperado ou se houver erros de validação nos campos.
   - **404 Not Found**: Se o formulário com o `id` especificado não existir.
@@ -61,7 +71,9 @@
 
 - **URL**: `/forms/{id}`
 - **Método**: `DELETE`
-- **Resposta**: Retorna o formulário excluído.
+  
+- **Resposta**: Retorna o formulário excluído no formato JSON.
+  
 - **Exceções**:
   - **404 Not Found**: Se o formulário com o `id` especificado não existir.
 
@@ -69,6 +81,8 @@
 
 - **URL**: `/forms/cards`
 - **Método**: `GET`
-- **Resposta**: Retorna uma lista de cartões de formulário, contendo apenas os campos `id`, `name`, `date` e `comment`.
+  
+- **Resposta**: Retorna uma lista de cartões de formulário no formato JSON, contendo apenas os campos `id`, `name`, `date` e `comment`.
+  
 - **Exceções**:
   - **404 Not Found**: Se não houver formulários cadastrados no momento.
