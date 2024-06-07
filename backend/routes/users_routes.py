@@ -3,7 +3,7 @@ from controllers.users_controller import users_controller, login_controller
 
 users_routes = Blueprint('users_routes', __name__)
 
-@users_routes.route('/users', methods=['GET', 'POST'])
+@users_routes.route('/register', methods=['GET', 'POST'])
 def handle_users():
     return users_controller()
 
