@@ -39,27 +39,27 @@ const Register = () => {
     return (
         <div className="container-cl">
             <div id="container-img">
-                <img id="img-login" src={background} alt="" />
+                <img id="img-register" src={background} alt="" />
             </div>
             <form className="container-register" onSubmit={handleSubmit}>
                 <h1 id="title-user">Cadastre-se</h1>
                 <label htmlFor="name"> Nome:
-                    <input type="text" className="input-user" placeholder="Nome" id="name" onChange={(e) => setNome(e.target.value)} required/>
+                    <input type="text" className="input-register" placeholder="Nome" id="name" onChange={(e) => setNome(e.target.value)} required/>
                 </label>
                 <label htmlFor="cpf"> CPF:
-                    <input type="text" className="input-user" placeholder="CPF" id="cpf" onChange={(e) => setCpf(e.target.value)} required/>
+                    <input type="text" className="input-register" placeholder="CPF" id="cpf" onChange={(e) => setCpf(e.target.value)} required/>
                 </label>
                 <label htmlFor="email"> E-mail:
-                    <input type="text" className="input-user" placeholder="E-mail" id="email" onChange={(e) => setEmail(e.target.value)} required/>
+                    <input type="text" className="input-register" placeholder="E-mail" id="email" onChange={(e) => setEmail(e.target.value)} required/>
                 </label>
                 <label htmlFor="password">Senha:
-                    <input type="password" className="input-user" placeholder="Senha" id="password" onChange={(e) => setSenha(e.target.value)} required/>
+                    <input type="password" className="input-register" placeholder="Senha" id="password" onChange={(e) => setSenha(e.target.value)} required/>
                 </label>
                 <label htmlFor="confirmPassword">Confirme a Senha:
-                    <input type="password" className="input-user" placeholder="Confirme a Senha" id="confirmPassword" onChange={(e) => setSenha(e.target.value)} required/>
+                    <input type="password" className="input-register" placeholder="Confirme a Senha" id="confirmPassword" onChange={(e) => setSenha(e.target.value)} required/>
                 </label>
                 <label htmlFor="role">Papel:
-                    <select className="input-user" id="role"  onChange={(e) => setPapel(e.target.value)} required>
+                    <select className="input-register" id="role"  onChange={(e) => setPapel(e.target.value)} required>
                         <option value="medico">Médico</option>
                         <option value="paciente">Paciente</option>
                     </select>

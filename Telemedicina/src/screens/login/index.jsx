@@ -38,8 +38,8 @@ const Login = () => {
 
         <form className="container-login" onSubmit={handleSubmit}>
             <h1 id="title-user">Informe abaixo CPF e senha</h1>
-            <label htmlFor=""> CPF: <input type="text" className="input-user" placeholder="CPF" onChange={(e) => setCpf(e.target.value)} required/></label>
-            <label htmlFor="">Senha:<input type="password" className="input-user" placeholder="Senha" onChange={(e) => setSenha(e.target.value)} required/></label>
+            <label htmlFor="" className="label-login"> CPF: <input type="text" className="input-user" placeholder="CPF" onChange={(e) => setCpf(e.target.value)} required/></label>
+            <label htmlFor="" className="label-login">Senha:<input type="password" className="input-user" placeholder="Senha" onChange={(e) => setSenha(e.target.value)} required/></label>
             <button className="button-red-header" type="submit">Entrar</button>
         </form>
         
