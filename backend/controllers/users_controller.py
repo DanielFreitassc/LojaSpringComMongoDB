@@ -6,7 +6,7 @@ def users_controller():
     if request.method == 'POST':
         try:
             data = request.get_json()
-            user = Users(data['nome'],data['cpf'], data['email'], data['senha'], data['papel'])
+            user = Users(data['nome'], data['cpf'], data['email'], data['senha'], data['papel'])
             db.session.add(user)
             db.session.commit()
             return jsonify({'message': 'Usuário criado com sucesso'}), 200
@@ -27,10 +27,10 @@ def login_controller():
             data = request.get_json()
             cpf = data['cpf']
             senha = data['senha']
-            
             user = Users.query.filter_by(cpf=cpf).first()
+            
             if user and user.check_password(senha):
-                return jsonify({'message': 'Login realizado com sucesso'}), 200
+                return jsonify({'message': 'Login realizado com sucesso', 'papel': user.papel}), 200
             else:
                 return jsonify({'message': 'Credenciais inválidas'}), 401
         except Exception as e:

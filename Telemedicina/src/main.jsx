@@ -9,6 +9,10 @@ import Support from './screens/support'
 import Doctors from './screens/doctors'
 import Login from './screens/login'
 import Register from './screens/register'
+import Patient from './screens/patient'
+import Doctor from './screens/doctor'
+import RegisterConsultation from './screens/registerConsultation'
+import RegisterPatient from './screens/registerPatient'
 
 const router = createBrowserRouter([
   {
@@ -38,6 +42,22 @@ const router = createBrowserRouter([
   {
     path:"/medicos",
     element:<Doctors/>
+  },
+  {
+    path:"/patient",
+    element: <Patient/>  
+  },
+  {
+    path:"/register-consultation",
+    element: <RegisterConsultation/>
+  },
+  {
+    path:"/doctor",
+    element: <Doctor/>
+  },
+  {
+    path:"/register-patient",
+    element: <RegisterPatient/>
   }
 ]) 
 

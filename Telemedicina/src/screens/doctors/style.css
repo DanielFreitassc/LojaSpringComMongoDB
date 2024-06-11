@@ -1,0 +1,68 @@
+.container-doctor {
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+}
+    
+   
+.card-container-doctor {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.custom-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: calc(30% - 100px);
+    max-width: 300px;
+    height: 400px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 16px;
+    
+}
+
+.custom-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.custom-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: block;
+    margin: auto;
+}
+
+.card-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.card-subtitle {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+.card-text {
+    font-size: 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

@@ -9,7 +9,7 @@ const Register = () => {
     const [cpf, setCpf] = useState("");
     const [email, setEmail] = useState("");
     const [senha, setSenha] = useState("");
-    const [papel, setPapel] = useState("");
+    const [papel, setPapel] = useState("medico");
 
     const handleSubmit = async (event) => {
         event.preventDefault();
@@ -43,22 +43,22 @@ const Register = () => {
             </div>
             <form className="container-register" onSubmit={handleSubmit}>
                 <h1 id="title-user">Cadastre-se</h1>
-                <label htmlFor="name"> Nome:
+                <label className="label-r" htmlFor="name"> Nome:
                     <input type="text" className="input-register" placeholder="Nome" id="name" onChange={(e) => setNome(e.target.value)} required/>
                 </label>
-                <label htmlFor="cpf"> CPF:
+                <label className="label-r" htmlFor="cpf"> CPF:
                     <input type="text" className="input-register" placeholder="CPF" id="cpf" onChange={(e) => setCpf(e.target.value)} required/>
                 </label>
-                <label htmlFor="email"> E-mail:
+                <label className="label-r" htmlFor="email"> E-mail:
                     <input type="text" className="input-register" placeholder="E-mail" id="email" onChange={(e) => setEmail(e.target.value)} required/>
                 </label>
-                <label htmlFor="password">Senha:
+                <label  className="label-r" htmlFor="password">Senha:
                     <input type="password" className="input-register" placeholder="Senha" id="password" onChange={(e) => setSenha(e.target.value)} required/>
                 </label>
-                <label htmlFor="confirmPassword">Confirme a Senha:
+                <label className="label-r" htmlFor="confirmPassword">Confirme a Senha:
                     <input type="password" className="input-register" placeholder="Confirme a Senha" id="confirmPassword" onChange={(e) => setSenha(e.target.value)} required/>
                 </label>
-                <label htmlFor="role">Papel:
+                <label className="label-r" htmlFor="role">Papel:
                     <select className="input-register" id="role"  onChange={(e) => setPapel(e.target.value)} required>
                         <option value="medico">Médico</option>
                         <option value="paciente">Paciente</option>
