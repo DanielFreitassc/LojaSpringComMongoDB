@@ -1,0 +1,12 @@
+spring:
+  application:
+        name: backend
+  data:
+    mongodb:
+      authentication-database: admin
+      auto-index-creation: true
+      host: localhost
+      port: 27017
+      database: storedb
+      username: "admin"
+      password: "admin"
